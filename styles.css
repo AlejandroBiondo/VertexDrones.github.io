@@ -30,7 +30,7 @@ html, body {
 
 body {
   font-family: "Inter", sans-serif;
- background: linear-gradient(
+  background: linear-gradient(
     to bottom,
     #bfc1c4 0%,
     #b4b6b9 40%,
@@ -73,14 +73,12 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  
   background: linear-gradient(
-    to bottom,
-    #d3d4d6 0%,
-    #c5c6c8 60%,
-    #b8babd 100%
-  );
-  
+      to bottom,
+      #d3d4d6 0%,
+      #c5c6c8 60%,
+      #b8babd 100%
+    );
   border-bottom: 1px solid rgba(0,0,0,0.08);
   backdrop-filter: blur(10px);
 }
@@ -144,7 +142,12 @@ body {
 ----------------------------*/
 
 .hero {
-  background: var(--bg-alt);
+  background: linear-gradient(
+    to bottom,
+    #cfd0d2 0%,
+    #bfc0c3 40%,
+    #b0b1b4 100%
+  );
   padding: 5rem 0 4rem;
 }
 
@@ -214,7 +217,11 @@ body {
 ----------------------------*/
 
 .card {
-  background: var(--card);
+  background: linear-gradient(
+      to bottom right,
+      #ffffff 0%,
+      #f4f4f5 100%
+    );
   border-radius: var(--radius-lg);
   padding: 1.6rem;
   box-shadow: var(--shadow-card);
