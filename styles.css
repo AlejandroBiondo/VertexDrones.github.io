@@ -77,41 +77,39 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(14px);
   background: linear-gradient(
     to bottom,
-    #0e1528 0%,
-    #0e1528 80%
+    #111827 0%,   /* lighter navy for contrast with logo */
+    #020617 100%
   );
-  border-bottom: 1px solid rgba(148, 163, 184, 0.16);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.9rem 0;
+  padding: 1rem 0;
 }
 
+/* Left side: logo + text */
+
 .logo-group {
-  position: relative;
   display: flex;
   align-items: center;
   gap: 1.2rem;
 }
 
-/* Logo with centered glow */
-
 .logo {
-  width: 150px;           
+  width: 110px;          /* adjust bigger/smaller as you like */
   height: auto;
   object-fit: contain;
   background: none;
-  border-radius: 0;       
-  box-shadow: none;      
-  filter: brightness(1.15) contrast(1.05);
+  border-radius: 0;
+  box-shadow: none;
+  filter: brightness(1.1) contrast(1.05);
 }
-
 
 .logo-text {
   display: flex;
@@ -128,6 +126,8 @@ body {
   font-size: 0.9rem;
   color: var(--muted);
 }
+
+/* Right side: navigation */
 
 .nav {
   display: flex;
