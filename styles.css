@@ -78,12 +78,8 @@ body {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: linear-gradient(
-    to bottom,
-    #111827 0%,   /* lighter navy for contrast with logo */
-    #020617 100%
-  );
-  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  background: #25304a;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
 }
 
 .header-inner {
@@ -102,7 +98,7 @@ body {
 }
 
 .logo {
-  width: 250px;          
+  width: 210px;          
   height: auto;
   object-fit: contain;
   background: none;
@@ -119,11 +115,11 @@ body {
 .brand-name {
   font-weight: 600;
   letter-spacing: 0.04em;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .brand-tagline {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: var(--muted);
 }
 
