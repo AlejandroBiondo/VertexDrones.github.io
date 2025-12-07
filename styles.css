@@ -100,36 +100,17 @@ body {
   gap: 1.2rem;
 }
 
-/* soft halo behind the logo to separate it from the dark header */
-.logo-group::before {
-  content: "";
-  position: absolute;
-  left: -14px;
-  top: -14px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.22), transparent 70%);
-  filter: blur(10px);
-  z-index: 0;
-}
-
-/* keep the logo above the glow */
-.logo {
-  position: relative;
-  z-index: 1;
-}
+/* Logo with centered glow */
 
 .logo {
   width: 150px;
-  height: 150px;
+  height: auto;
   object-fit: contain;
   background: transparent;
-  box-shadow: none;
+  border-radius: 12px; /* set to 0 if you prefer sharp corners */
   filter: brightness(1.15) contrast(1.05);
-  border-radius: 0; /* remove circular cropping completely */
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
 }
-
 
 .logo-text {
   display: flex;
@@ -137,15 +118,14 @@ body {
 }
 
 .brand-name {
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  font-size: 1.1rem;
-}
-
-.brand-name {
   font-weight: 600;
   letter-spacing: 0.04em;
   font-size: 1.4rem;
+}
+
+.brand-tagline {
+  font-size: 0.9rem;
+  color: var(--muted);
 }
 
 .nav {
