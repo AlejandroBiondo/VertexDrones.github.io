@@ -83,9 +83,9 @@ body {
   position: sticky;
   top: 0;
   z-index: 20;
-  backdrop-filter: blur(14px);
-  background: #1a2337;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  backdrop-filter: blur(10px);
+  background: #e5e7eb;            /* light gray */
+  border-bottom: 1px solid #cbd5f5;
 }
 
 .header-inner {
@@ -121,33 +121,26 @@ body {
 .brand-name {
   font-weight: 600;
   letter-spacing: 0.04em;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  color: #111827;                 
 }
 
 .brand-tagline {
-  font-size: 1.2rem;
-  color: var(--muted);
-}
-
-/* Right side: navigation */
-
-.nav {
-  display: flex;
-  gap: 1.6rem;
-  font-size: 1.05rem;
+  font-size: 0.9rem;
+  color: #4b5563;                 
 }
 
 .nav a {
   text-decoration: none;
-  color: var(--muted);
+  color: #4b5563;                  
   padding-bottom: 0.15rem;
   border-bottom: 1px solid transparent;
   transition: color 0.18s ease, border-color 0.18s ease;
 }
 
 .nav a:hover {
-  color: var(--accent);
-  border-color: rgba(56, 189, 248, 0.6);
+  color: #111827;
+  border-color: #111827;
 }
 
 /* Hero */
