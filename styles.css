@@ -103,14 +103,15 @@ body {
 /* Logo with centered glow */
 
 .logo {
-  width: 150px;
+  width: 150px;           
   height: auto;
   object-fit: contain;
-  background: transparent;
-  border-radius: 12px; /* set to 0 if you prefer sharp corners */
+  background: none;
+  border-radius: 0;       
+  box-shadow: none;      
   filter: brightness(1.15) contrast(1.05);
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
 }
+
 
 .logo-text {
   display: flex;
