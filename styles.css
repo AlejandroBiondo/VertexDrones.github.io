@@ -87,7 +87,7 @@ body {
 }
 
 .logo {
-  width: 110px;
+  width: 220px;
   height: auto;
   object-fit: contain;
   filter: brightness(1.15) contrast(1.1);
