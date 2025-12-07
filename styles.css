@@ -28,10 +28,16 @@ body {
 body {
   font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
-  background: radial-gradient(circle at top, #0b1120 0, #020617 55%, #000 100%);
+  background: linear-gradient(
+    to bottom,
+    #1a2337 0%,      
+    #0f1829 40%,     
+    #020617 100%     
+  );
   color: var(--text);
   line-height: 1.6;
 }
+
 
 /* Layout helpers */
 
@@ -78,8 +84,8 @@ body {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(14px);
-  background: #25304a;
-  border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+  background: #1a2337;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
 }
 
 .header-inner {
