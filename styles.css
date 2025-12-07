@@ -101,8 +101,8 @@ body {
 }
 
 .logo {
-  width: 42px;
-  height: 42px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   object-fit: contain;
   background: radial-gradient(circle at 30% 20%, #e5e7eb, #111827);
