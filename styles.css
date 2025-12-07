@@ -80,9 +80,8 @@ body {
   backdrop-filter: blur(16px);
   background: linear-gradient(
     to bottom,
-    rgba(2, 6, 23, 0.95),
-    rgba(2, 6, 23, 0.7),
-    transparent
+    #0e1528 0%,
+    #0e1528 80%
   );
   border-bottom: 1px solid rgba(148, 163, 184, 0.16);
 }
