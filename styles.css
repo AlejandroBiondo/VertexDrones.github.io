@@ -103,11 +103,12 @@ body {
 .logo {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
   object-fit: contain;
-  background: radial-gradient(circle at 30% 20%, #e5e7eb, #111827);
-  box-shadow: 0 0 0 1px rgba(148, 163, 184, 0.25);
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0; /* remove circular cropping completely */
 }
+
 
 .logo-text {
   display: flex;
