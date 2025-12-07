@@ -99,6 +99,33 @@ body {
   gap: 1.2rem;
 }
 
+.logo-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* soft halo behind the logo to separate it from the dark header */
+.logo-group::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: -14px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.22), transparent 70%);
+  filter: blur(10px);
+  z-index: 0;
+}
+
+/* keep the logo above the glow */
+.logo {
+  position: relative;
+  z-index: 1;
+}
+
 .logo {
   width: 150px;
   height: 150px;
